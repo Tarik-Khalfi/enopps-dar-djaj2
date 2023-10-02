@@ -9,8 +9,10 @@ const Footer = () => {
         <div className=" col-span-6 space-y-7">
           <Image src="/logo.png" alt="logo" width={70} height={70} />
           <p className="w-[360px] leading-9 font-poppins text-[#A1A1A1]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor Sed ut perspiciatis unde omnis iste{" "}
+            Spécialiste de la rôtisserie depuis 1974 <br />
+            Un Goût inimitable
+            <br />
+            Dégustez et vous reviendrez
           </p>
           <ul className="flex items-center">
             {/* <li>
@@ -73,12 +75,12 @@ const Footer = () => {
           <ul className=" space-y-3">
             <li>
               <Link className="text-[#A1A1A1] hover:text-white" href="/">
-                Home
+                Accueil
               </Link>
             </li>
             <li>
               <Link className="text-[#A1A1A1] hover:text-white" href="/menu">
-                Our Menu
+                La Carte
               </Link>
             </li>
             <li>
@@ -86,7 +88,7 @@ const Footer = () => {
                 className="text-[#A1A1A1] hover:text-white "
                 href="/contact"
               >
-                Contact
+                Nous Contacter
               </Link>
             </li>
           </ul>
@@ -97,15 +99,15 @@ const Footer = () => {
           <ul className=" space-y-5 text-[#A1A1A1]">
             <li className=" flex gap-3 ">
               <span className="font-bold text-2xl text-white ">L.</span>
-              <p> Braga Street 28, Bandung, West Java, Indonesia</p>
+              <p> 356 av moulay ismail cité nahda Agadir, Agadir, Morocco</p>
             </li>
             <li className=" flex gap-3 items-center">
               <span className="font-bold text-2xl text-white">P.</span>
-              <p>+62 863812123</p>
+              <p>+212 5288-21819</p>
             </li>
             <li className=" flex gap-3 items-center">
               <span className="font-bold text-2xl text-white">E.</span>
-              <p>lezzatos@restaurant.com</p>
+              <p>dardjaj.ma</p>
             </li>
           </ul>
         </div>

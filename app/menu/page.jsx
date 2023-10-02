@@ -10,7 +10,7 @@ const page = () => {
         <HeaderProp
           fontt="font-bold text-7xl"
           font="font-bernier"
-          text="Our Menu"
+          text="Notre Menu"
         />
       </section>
       <div className="bg-[#0D1518] ">
