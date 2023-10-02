@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 export default function SpecialDish() {
   const [dish, setDish] = useState(false);
-  const [dishSalade, setDishSalade] = useState(false);
+  const [dishSalade, setDishSalade] = useState(true);
   const [dishDesert, setDishDesert] = useState(false);
   return (
     <div className="h-[882px] bg-[#0B0E11] lg:mt-[110px] mt-[620px]  mb-[110px] relative">
@@ -32,7 +32,7 @@ export default function SpecialDish() {
             <div
               className={`${
                 dish === true
-                  ? `h-[300px] w-[90%]   bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer`
+                  ? `h-[194px] w-[90%]   bg-white absolute bottom-0 afterClip z-20 hover:cursor-pointer`
                   : "w-[90%] h-[70px]  bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer"
               } `}
               onClick={() => {
@@ -41,11 +41,13 @@ export default function SpecialDish() {
             >
               <div className="flex flex-row justify-center absolute space-x-4">
                 <div className="flex flex-col">
-                  <h1 className="text-[#0F1622] font-poppins  font-bold text-[20px] font-600 leading-normal lg:space-x-4 lg:p-4 p-2 space-x-2 z-20 flex  items-center gap-x-5">
-                    <div className="h-[3px] w-[40px] bg-[#f09804] ml-5 "></div>
-                    Nos Sandwichs
-                  </h1>
-                  <div className="flex-col space-y-4 mr-auto w-full p-2">
+                  <div className="flex flex-row justify-center items-center pl-4">
+                    <span className="h-[3px] w-[40px] bg-[#f09804] ml-1 text-left"></span>
+                    <h1 className="text-[#0F1622]  text-[32px] font-bernier font-bold font-600 leading-normal space-x-4 p-4 text-left">
+                      TACOS DAR D'JAJ
+                    </h1>
+                  </div>
+                  <div className="flex-col space-y-4 mr-auto w-full pl-6">
                     <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal">
                       Sandwich poulet
                     </p>
@@ -66,35 +68,27 @@ export default function SpecialDish() {
             <div
               className={`${
                 dishSalade === true
-                  ? `h-[300px] w-[90%]   bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer`
+                  ? `h-[194px] w-[90%]   bg-white absolute bottom-0 afterClip z-20 hover:cursor-pointer`
                   : "w-[90%] h-[70px]  bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer"
               } `}
               onClick={() => {
                 setDishSalade(dishSalade === true ? false : true);
               }}
             >
-              <div className="flex flex-col justify-center items-center absolute space-x-4">
-                <div className="flex flex-row justify-center items-center space-x-4">
-                  <span className="h-[3px] w-[40px] bg-[#f09804] ml-5"></span>
-                  <h1 className="text-[#0F1622]  font-poppins text-[20px] font-bold font-600 leading-normal space-x-4 p-4">
-                    Nos Salades
+              <div className="flex flex-col   absolute space-x-1">
+                <div className="flex flex-row  items-center space-x-1 pl-4">
+                  <span className="h-[3px] w-[40px] bg-[#f09804] ml-1 text-left"></span>
+                  <h1 className="text-[#0F1622]  text-[32px] font-bernier font-bold font-600 leading-normal space-x-4 p-4 text-left">
+                    POULET ENTIER
                   </h1>
                 </div>
                 <div className="flex-col space-y-4 mr-auto w-full p-2">
-                  <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal">
-                    Salade Dar D'jaj
+                  <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal pl-2">
+                    Poulet rôti (accompagné de riz , frites <br />
+                    sauce tomate cerise et sauce poulet)
                   </p>
-                  <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                    Salade de Thon
-                  </p>
-                  <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                    Salade Marocaine
-                  </p>
-                  <p className="text-[#F09804] font-poppins text-[24px] font-600 leading-normal">
-                    30 MAD{" "}
-                    <span className="text-[#959595] font-poppins text-[12px] font-400 leading-normal">
-                      / person
-                    </span>
+                  <p className="font-bernier text-[#f09804] text-[32px] font-400 leading-normal pl-2">
+                    140 DH
                   </p>
                 </div>
               </div>
@@ -106,29 +100,33 @@ export default function SpecialDish() {
             <div
               className={`${
                 dishDesert === true
-                  ? `h-[300px] w-[90%]   bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer`
+                  ? `h-[194px] w-[90%]   bg-white absolute bottom-0 afterClip z-20 hover:cursor-pointer`
                   : "w-[90%] h-[70px]  bg-white absolute bottom-0 spcSect2 z-20 hover:cursor-pointer"
               } `}
               onClick={() => {
                 setDishDesert(dishDesert === true ? false : true);
               }}
             >
-              <div className="flex flex-row justify-center items-center absolute space-x-4">
-                <span className="h-[3px] w-[40px] bg-[#f09804] ml-4 "></span>
-                <h1 className="text-[#0F1622] font-bold font-poppins text-[20px] font-600 leading-normal  lg:space-x-4 lg:p-4 p-2 space-x-2   ">
-                  Nos Plats
-                </h1>
-              </div>
-              <div className="flex-col space-y-4 mr-auto w-full p-2 mt-[60px]">
-                <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal">
-                  Escalope de poulet
-                </p>
-                <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                  Emince de poulet{" "}
-                </p>
-                <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
-                  Brochettes de poulet
-                </p>
+              <div className="flex flex-row justify-center absolute space-x-4">
+                <div className="flex flex-col">
+                  <div className="flex flex-row justify-center items-center pl-4">
+                    <span className="h-[3px] w-[40px] bg-[#f09804] ml-1 text-left"></span>
+                    <h1 className="text-[#0F1622]  text-[32px] font-bernier font-bold font-600 leading-normal space-x-4 p-4 text-left">
+                      SALADE DAR D'JAJ
+                    </h1>
+                  </div>
+                  <div className="flex-col space-y-4 mr-auto w-full pl-6">
+                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal">
+                      Sandwich poulet
+                    </p>
+                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
+                      Tacos Dar Djaj
+                    </p>
+                    <p className="text-[#4E4F51] text-poppins text-[15px] font-400 leading-normal md:block hidden">
+                      Sandwich Tandori
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
